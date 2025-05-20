@@ -26,48 +26,13 @@
       descendentes com características desejáveis, como resistência a doenças e maior produtividade.
       Essa prática é fundamental para a apicultura moderna e ajuda a garantir a saúde e a sustentabilidade das populações de abelhas.
     </p>
-
-    <!-- Seção para adicionar novas imagens e texto informativo -->
-    <div class="add-image-section">
-      <h2>Adicionar Imagem e Texto Informativo</h2>
-      <input type="file" accept="image/*" id="imageInput" />
-      <input type="text" id="imageDescription" placeholder="Digite a descrição da imagem" />
-      <button onclick="addImage()">Adicionar Imagem</button>
-      <div id="addedImages" class="added-images"></div>
-    </div>
-  </main>
-
-  <script>
-    function addImage() {
-      const input = document.getElementById('imageInput');
-      const descriptionInput = document.getElementById('imageDescription');
-      const addedImagesContainer = document.getElementById('addedImages');
-
-      if (input.files && input.files[0]) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          const imgContainer = document.createElement('div');
-          imgContainer.style.textAlign = 'center';
-          const img = document.createElement('img');
-          img.src = e.target.result;
-          img.alt = "Imagem adicionada pelo usuário";
-          img.style.maxWidth = '100%';
-          img.style.borderRadius = '8px';
-          img.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-
-          const description = document.createElement('p');
-          description.textContent = descriptionInput.value;
-          description.style.marginTop = '0.5rem';
-          description.style.color = '#333';
-
-          imgContainer.appendChild(img);
-          imgContainer.appendChild(description);
-          addedImagesContainer.appendChild(imgContainer);
-        }
-        reader.readAsDataURL(input.files[0]);
-        descriptionInput.value = ''; // Limpa o campo de descrição após adicionar
-      }
-    }
-  </script>
 </body>
 </html>
+<section class="insemination-history">
+  <h2>História da Inseminação Artificial de Abelhas</h2>
+  <p>
+    A inseminação artificial é de grande importância para com o melhoramento genético das abelhas, permitindo um controle mais rigoroso da sua ancestralidade. A técnica corresponde a um processo especializado que exige um manejo preciso das linhagens materna e paterna, uma tarefa complexa devido ao fato da rainha acasalar com múltiplos zangãos. O desenvolvimento da técnica envolveu décadas de pesquisa e avanços tecnológicos. Os primeiros esforços para a inseminação artificial começaram em 1788, quando F. Huber utilizou uma escova para inserir esperma na rainha. Em 1887, MacLean introduziu espermatozoides gota a gota e testou um dispositivo de acasalamento com zangão. Em 1920, Bishop desenvolveu a válvula vaginal, e em 1927, Watson obteve sucesso ao usar uma micro seringa e uma lupa binocular. A partir de 1930, Laidlaw passou a usar dióxido de carbono para anestesia e, em 1944, introduziu um novo dispositivo de inseminação. Em 1974, houve um aprimoramento do equipamento baseado no design de Mackensen. Atualmente, os modelos mais utilizados são os desenvolvidos por Laidlaw e Mackensen. O aparelho reprodutivo da abelha rainha é composto por: ovários, ductos ovarianos, espermateca e glândulas associadas ao armazenamento e transporte de espermatozoides. Em contraste, o aparelho reprodutivo do zangão inclui: testículos, vesículas seminais e órgãos de acasalamento, e o esperma é liberado durante a cópula, resultando na morte do zangão pouco depois. A inseminação artificial em abelhas é um método importante para melhorar a genética e gerenciar linhagens, mas apresenta desafios significativos. Requer conhecimento especializado, o que pode limitar seu uso a apicultores com mais recursos. O controle da seleção de zangões pode reduzir a diversidade genética das colônias, aumentando a vulnerabilidade a doenças e mudanças ambientais. Além disso, há preocupações éticas e biológicas, pois o processo envolve a morte de zangões e a manipulação direta de rainhas.
+  </p>
+</section>
+
+

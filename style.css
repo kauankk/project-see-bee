@@ -1,89 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-* {
-  box-sizing: border-box;
-}
-
-body, html {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
   margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-  color: #fbfbfb;
-  background: url('img/crumpled-paper.jpg') no-repeat center center fixed; /* Updated background */
-  background-size: cover;
+  padding: 2rem;
 }
-
-/* Overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(46, 35, 35, 0.787);
-  z-index: -1;
-}
-
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 4rem;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 6px rgba(70, 67, 67, 0.7);
-  color: #e4d901; /* Customize the title color here */
-}
-
-p.description {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
-}
-
-.insemination-info {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 2rem;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.7);
-}
-
-.bee-gallery {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.bee-gallery img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
-
-.bee-gallery img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+.bee-gallery img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-/* Responsive */
-@media (max-width: 600px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .bee-gallery img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-  }
+.add-image-section {
+  margin-top: 2rem;
+  padding: 1rem;
+  border-top: 2px solid #ccc;
+}
+.add-image-section input[type="file"],
+.add-image-section input[type="text"] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.added-images {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
